@@ -16,3 +16,33 @@
 @import "./sass/sections/contact";
 @import "./sass/sections/hero";
 @import "./sass/sections/projects";
+
+.profile-img {
+    animation: animate 8s ease-in-out infinite;
+    background-image: url(https://res.cloudinary.com/dvjnxuxxj/image/upload/f_auto,q_auto/v1/Self_logo/aboutme_x2tgwk);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #fff;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    height: 30rem;
+    position: relative;
+    transition: all 1s ease-in-out;
+    width: 35rem;
+  }
+  @keyframes animate {
+    0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  
+    50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  }
+  .img-fluid {
+    height:320px
+  }
+  
