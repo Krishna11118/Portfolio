@@ -9,11 +9,6 @@
 
 👉 Live Demo: <a href='https://krishnaaportfolio.netlify.app/'>Live Demo</a>
 
-<h3>Build with:</h3>
-
-» Sass / Scss <br>
-» React JS
-
 
 List of frameworks/libraries/languages that were used to built this project.
 
@@ -32,6 +27,9 @@ List of frameworks/libraries/languages that were used to built this project.
 
 
 
+## Contact
+
+Krishna -  [@Whatsapp](https://wa.me/+917318378893) - krishnassss365@gmail.com - [@LinkedIn](https://www.linkedin.com/in/krishna365/)
 
 
 
