@@ -12,6 +12,9 @@
  
 </div>
 
+![](https://github.com/Krishna11118/portfolio/blob/main/ProfitFolio_Gif.gif)
+
+
 
 
 <!-- TABLE OF CONTENTS -->
