@@ -2,7 +2,7 @@
 
 <h2>About the project</h2>
 
-  <p>A <b>car rental</b> website is an online platform that allows users to rent cars for personal or business use. The website provides an easy-to-use interface for searching, comparing, and reserving cars from a wide selection of vehicles that vary in make, model, size, and price.</p>
+  <p>Welcome to my self-portfolio website! This unique and visually stunning platform showcases my skills, experiences, and projects, highlighting my journey as a developer. Built with the powerful combination of React.js, SCSS, HTML, and JavaScript, this website offers an interactive and engaging experience for visitors.</p>
 
 ![](https://github.com/Krishna11118/portfolio/blob/main/ProfitFolio_Gif.gif)
 
