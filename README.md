@@ -4,7 +4,7 @@
 
   <p>Welcome to my self-portfolio website! This unique and visually stunning platform showcases my skills, experiences, and projects, highlighting my journey as a developer. Built with the powerful combination of React.js, SCSS, HTML, and JavaScript, this website offers an interactive and engaging experience for visitors.</p>
 
-![](https://github.com/Krishna11118/portfolio/blob/main/ProfitFolio_Gif.gif)
+![](https://github.com/Krishna11118/portfolio/blob/main/examples/ProfitFolio_Gif.gif)
 
 
 👉 Live Demo: <a href='https://krishnaaportfolio.netlify.app/'>Live Demo</a>
