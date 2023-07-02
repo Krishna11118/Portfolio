@@ -27,7 +27,7 @@ List of frameworks/libraries/languages that were used to built this project.
 
 
 
-## Contact
+<h2>Contact</h2>
 
 Krishna -  [@Whatsapp](https://wa.me/+917318378893) - krishnassss365@gmail.com - [@LinkedIn](https://www.linkedin.com/in/krishna365/)
 
