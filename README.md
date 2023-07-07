@@ -10,7 +10,7 @@
 👉 Live Demo: <a href='https://krishnaaportfolio.netlify.app/'>Live Demo</a>
 
 
-List of frameworks/libraries/languages that were used to built this project.
+List of frameworks/libraries/languages that were used to built this project .
 
 * [![React][React.js]][React-url]
 * [![Scss][Scss]][Scss-url]
