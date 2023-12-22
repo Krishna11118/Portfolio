@@ -19,7 +19,7 @@
 
 .profile-img {
     animation: animate 8s ease-in-out infinite;
-    background-image: url(https://res.cloudinary.com/dvjnxuxxj/image/upload/f_auto,q_auto/v1/Self_logo/aboutme_x2tgwk);
+    background-image: url(./assets/5.png);
     background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,6 +29,7 @@
     position: relative;
     transition: all 1s ease-in-out;
     width: 35rem;
+    height: 45rem;
   }
   @keyframes animate {
     0% {
