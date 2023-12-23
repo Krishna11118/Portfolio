@@ -46,4 +46,27 @@
   .img-fluid {
     height:320px
   }
+  @media screen and (max-width: 532px) {
+   
+
+    .img-fluid {
+      height: 191px;
+    }
+    #projects .project-wrapper__image .thumbnail {
+
+      border: none 
+    }
+  }
+
+  @media screen and (max-width: 432px) {
+   
+
+    .img-fluid {
+      height: 126px;
+    }
+    #projects .project-wrapper__image .thumbnail {
+
+      border: none 
+    }
+  }
   
