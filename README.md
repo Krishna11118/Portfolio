@@ -23,7 +23,7 @@ List of frameworks/libraries/languages that were used to built this project .
 <br>
 
 <div align='center'>
-<img src='https://res.cloudinary.com/dvjnxuxxj/image/upload/v1687634312/PortFolio_Readme/bzd5pgb9ypck5ik9mt2k.png'/>
+<img src='./examples/websiteFront.png'/>
 
 
 
