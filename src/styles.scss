@@ -31,6 +31,10 @@
     width: 35rem;
     height: 45rem;
   }
+
+  .about-wrapper__info-text strong {
+    font-weight: 700;
+  }
   @keyframes animate {
     0% {
       border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
