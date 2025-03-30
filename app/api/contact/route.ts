@@ -7,7 +7,7 @@ import type { NextRequest } from "next/server"
 // Use environment variables for sensitive information
 const EMAIL_USER = process.env.NEXT_PUBLIC_EMAIL_USER
 const EMAIL_PASS = process.env.NEXT_PUBLIC_EMAIL_PASS
-
+const googleDriveLink = process.env.NEXT_PUBLIC_RESUME_LINK
 if (!EMAIL_USER || !EMAIL_PASS) {
   throw new Error("Email credentials are not set in environment variables")
 }
@@ -73,7 +73,6 @@ Message: ${message}
     // Send email to self
     await transporter.sendMail(mailOptionsToSelf)
 
-    const googleDriveLink = "https://drive.google.com/file/d/1L9SB7Fr17NSc_XXIsq21UWqbt0t1FAzS/view?usp=drive_link"
     const mailOptionsToSender = {
       from: EMAIL_USER,
       to: email,
