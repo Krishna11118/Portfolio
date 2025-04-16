@@ -61,7 +61,7 @@ export default function VisitorLocationDisplay({ isMobile = false }: VisitorLoca
     <div className="flex items-center text-xs gap-1">
       <MapPin color="gray" className="h-3 w-3 flex-shrink-0" />
       <span className="whitespace-nowrap truncate sm:max-w-none">
-        <span className={!isMobile ? 'text-gray-500' : ''}>Last Visitor:</span>{' '}
+        <span className={!isMobile ? 'text-gray-700' : ''}>Last Visitor:</span>{' '}
         {`${location.city}, ${location.country}`}
       </span>
     </div>
