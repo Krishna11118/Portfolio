@@ -1,7 +1,7 @@
 export async function getLocations(): Promise<
   Array<{ latitude: number; longitude: number; city: string }>
 > {
-  const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
+  const baseUrl = process.env.NEXT_PUBLIC_URL || "http://localhost:3000";
   const response = await fetch(`${baseUrl}/api/locations`, {
     method: "GET",
     headers: { "Content-Type": "application/json" },
