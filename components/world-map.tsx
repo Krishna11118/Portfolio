@@ -9,7 +9,7 @@ export default async function WorldMapDemo() {
   try {
     locations = await getLocations();
   } catch (err: any) {
-    console.error("WorldMapDemo error:", err.message);
+    console.error("WorldMapDemo error:", err);
     error = "Failed to load locations. Please try again later.";
   }
 
