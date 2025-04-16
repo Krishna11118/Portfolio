@@ -1,0 +1,13 @@
+export const env = {
+    EMAIL_USER: process.env.NEXT_PUBLIC_EMAIL_USER,
+    EMAIL_PASS: process.env.NEXT_PUBLIC_EMAIL_PASS,
+    RESUME_LINK: process.env.NEXT_PUBLIC_RESUME_LINK,
+    NEXT_PUBLIC_IP2LOCATION_API_KEY: process.env.NEXT_PUBLIC_IP2LOCATION_API_KEY,
+    NEXT_PUBLIC_MONGODB_URI: process.env.NEXT_PUBLIC_MONGODB_URI,
+    NEXT_PUBLIC_MONGODB_DB: process.env.NEXT_PUBLIC_MONGODB_DB,
+    NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
+};
+
+if (!env.EMAIL_USER || !env.EMAIL_PASS || !env.RESUME_LINK || !env.NEXT_PUBLIC_IP2LOCATION_API_KEY || !env.NEXT_PUBLIC_MONGODB_URI || !env.NEXT_PUBLIC_MONGODB_DB || !env.NEXT_PUBLIC_URL) {
+    throw new Error("Required environment variables are missing");
+}
