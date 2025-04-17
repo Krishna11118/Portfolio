@@ -7,7 +7,7 @@ export default function AnimatedTitle() {
     <p className="font-bold text-xl md:text-4xl text-white">
       World-Wide{" "}
       <span className="text-neutral-400">
-        {"Viewers".split("").map((word, idx) => (
+        {"Visitors".split("").map((word, idx) => (
           <motion.span
             key={idx}
             className="inline-block"

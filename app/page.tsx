@@ -10,7 +10,7 @@ import WorldMapDemo from "@/components/world-map"
 
 export default function Home() {
   return (
-    <div className="min-h-screen  bg-black pt-16 pb-10">
+    <div className="min-h-screen  bg-black pt-16">
       <VisitorTracker />
       <MobileVisitorLocation />
       <HeroSection />

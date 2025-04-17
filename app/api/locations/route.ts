@@ -36,7 +36,7 @@ export async function GET(req: NextRequest) {
                     },
                 },
                 {
-                    $limit: 11, // Limit to 11 unique cities
+                    $limit: 100, // Limit to 11 unique cities
                 },
             ])
             .toArray();

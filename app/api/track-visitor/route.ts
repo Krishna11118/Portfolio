@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
 
     console.log("Visitor IP:", ip);
     // Ignore localhost IPs
-    if (ip === "::1" || ip === "127.0.0.1") {
+    if (ip === "::1" || ip === "127.0.0.1" || ip === "::ffff:127.0.0.1") {
       return NextResponse.json({ message: "Localhost IP - skipping DB save." }, { headers });
     }
     // Get location data from ip2location.io

@@ -24,8 +24,8 @@ export const Timeline = ({
 
   return (
     <div ref={ref} className={cn("relative mx-auto", className)}>
-      <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 -translate-x-1/2 bg-gradient-to-b from-blue-500 to-pink-500" />
-      <div className="block md:hidden absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-pink-500" />
+      <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 -translate-x-1/2 bg-gradient-to-b from-blue-500 to-white" />
+      <div className="block md:hidden absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-white" />
       <motion.div
         className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 -translate-x-1/2 bg-white origin-top"
         style={{ scaleY: scrollYProgress }}

@@ -23,7 +23,7 @@ export const VerticalTimeline = ({ children, className }: { children: React.Reac
   return (
     <VerticalTimelineContext.Provider value={{ timelineId }}>
       <div className={cn("relative", className)}>
-        <div className="absolute left-4 md:left-1/2 md:-ml-0.5 w-0.5 h-full bg-gradient-to-b from-blue-500 to-pink-500" />
+        <div className="absolute left-4 md:left-1/2 md:-ml-0.5 w-0.5 h-full bg-gradient-to-b from-blue-500 to-white" />
         <div className="relative">{children}</div>
       </div>
     </VerticalTimelineContext.Provider>

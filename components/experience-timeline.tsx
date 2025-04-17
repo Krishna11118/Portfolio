@@ -45,8 +45,8 @@ export default function ExperienceTimeline() {
                     className="text-center mb-12"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Experience</h2>
-                    <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-pink-500 mx-auto"></div>
-                    <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
+                    <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-white mx-auto"></div>
+                    <p className="text-gray-300 mt-4 mx-0 md:mx-4 max-w-2xl mx-auto">
                         Here are some of the technologies I've worked with and enjoy using.
                     </p>
                 </motion.div>

@@ -26,7 +26,7 @@ export const AceternityTimeline = ({
     <div ref={ref} className={cn("relative mx-auto", className)}>
       <motion.div
         style={{ scaleY: scrollYProgress }}
-        className="absolute left-9 top-2 bottom-2 w-[4px] bg-gradient-to-b from-blue-500 to-pink-500 origin-top md:left-1/2 md:ml-[-2px]"
+        className="absolute left-9 top-2 bottom-2 w-[4px] bg-gradient-to-b from-blue-500 to-white origin-top md:left-1/2 md:ml-[-2px]"
       />
 
       <div className="relative">
