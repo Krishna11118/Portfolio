@@ -57,7 +57,6 @@ export default function ContactSection() {
       setIsSubmitting(false)
     }
   }
-
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("krishnasss365@gmail.com").then(() => {
       setIsCopied(true)
@@ -68,6 +67,7 @@ export default function ContactSection() {
       setTimeout(() => setIsCopied(false), 2000)
     })
   }
+
 
   return (
     <section id="contact" className="relative py-12 sm:py-16 overflow-hidden">
