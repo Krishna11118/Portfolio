@@ -34,6 +34,28 @@ This is a **modern portfolio website** built with **Next.js**, **TailwindCSS**, 
 
 ---
 
+## 📸 Screenshots
+
+Here’s a preview of how the **Personal Portfolio Website** looks:
+
+### Landing View
+![Landing View](./examples/1.png)
+
+### About Me
+![About Me](./examples/2.png)
+
+### Technologies
+![Experience](./examples/3.png)
+
+### Experience
+![Experience](./examples/4.png)
+
+### Projects
+![Experience](./examples/5.png)
+
+### World-wide Visitors
+![Experience](./examples/6.png)
+
 ## ⚙️ Environment Variables
 
 Create a `.env.local` file in the root directory and add the following:
@@ -120,10 +142,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## 🧑‍💻 Author
 
-**Krishna Sharma**  
-📫 [LinkedIn](https://linkedin.com/in/krishna11118)  
-📧 krishna11118@gmail.com  
-🌐 [Live Demo](https://krishna11118.vercel.app)
+**Krishna**  
+📫 [LinkedIn](https://linkedin.com/in/krishna365)  
+📧 krishnasss365@gmail.com  
+🌐 [Live Demo](https://krishnastonetech.live/)
 
 ---
 
