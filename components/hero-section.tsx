@@ -30,7 +30,7 @@ export default function HeroSection() {
           }}
           className="text-center text-white/80 mt-4 text-base md:text-xl"
         >
-          Full-Stack Developer | AI/ML | UI/UX Enthusiast
+          Full-Stack Developer | AI/ML Engineer | Automation
         </motion.div>
       </LampContainer>
     </div>

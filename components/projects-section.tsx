@@ -185,7 +185,10 @@ export default function ProjectsSection() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"> */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 justify-items-center">
+
+
         {projects.slice(0, visibleProjects).map((project, index) => (
           <motion.div
             key={index}
@@ -194,7 +197,8 @@ export default function ProjectsSection() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ y: -5 }}
             onClick={() => openProjectModal(project)}
-            className="cursor-pointer transform transition-all duration-300"
+            // className="cursor-pointer transform transition-all duration-300"
+            className="cursor-pointer transform transition-all duration-300 w-full max-w-md"
           >
             <GlowingStarsBackgroundCard>
               <div className="relative h-full flex flex-col">

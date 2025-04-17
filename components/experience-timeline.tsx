@@ -11,7 +11,7 @@ const experiences = [
         startDate: "May 2024",
         endDate: "Present",
         period: "2024",
-        description: "Developed and deployed a MERN stack and React Native application, managing both frontend and backend. Designed and built web pages for an MNC client. Used AWS services like EC2, S3, and Athena, working with Node.js, Express.js, SQL, and MongoDB. Collaborated with the client and development teams to fix issues and performed system and regression testing to ensure a smooth UI after resolving reported bugs."
+        description: "Developed and deployed a MERN stack and Machine Learning models application, managing both frontend and backend. Designed and built web pages using Next.js for an MNC client. Used AWS services like EC2, S3, and Athena, working with Node.js, Express.js, SQL, and MongoDB. Collaborated with the client and development teams to fix issues and performed system and regression testing to ensure a smooth UI after resolving reported bugs."
     },
     {
         company: "Cyber Solvings",

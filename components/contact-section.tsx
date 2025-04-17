@@ -82,7 +82,7 @@ export default function ContactSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3">Get In Touch</h2>
           <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto"></div>
           <p className="text-gray-300 mt-3 text-sm sm:text-base max-w-xl mx-auto">
-            Have a project in mind or want to discuss opportunities? Reach out!
+            Fill out the form below to get in touch, and I'll send you my resume!
           </p>
         </motion.div>
 
