@@ -9,8 +9,13 @@ export async function POST(req: NextRequest) {
 
   try {
     // Get visitor IP
-    const ipResponse = await fetch("https://api.ipify.org?format=json");
-    const { ip } = await ipResponse.json();
+    // const ipResponse = await fetch("https://api.ipify.org?format=json");
+    // const { ip } = await ipResponse.json();
+
+    const forwarded = req.headers.get("x-forwarded-for");
+    const ip = forwarded ? forwarded.split(",")[0].trim() : "unknown";
+
+    console.log("Visitor IP:", ip);
 
     // Get location data from ip2location.io
     const apiKey = env.NEXT_PUBLIC_IP2LOCATION_API_KEY;
@@ -42,7 +47,7 @@ export async function POST(req: NextRequest) {
 }
 
 export async function GET(req: NextRequest) {
-  const headers = applyCorsHeaders(req , {});
+  const headers = applyCorsHeaders(req, {});
 
   try {
     // Connect to MongoDB
