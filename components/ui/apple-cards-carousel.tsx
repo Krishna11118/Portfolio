@@ -76,7 +76,7 @@ export function AppleCardsCarousel({ images, className }: AppleCardsCarouselProp
 
   // Auto-play functionality
   useEffect(() => {
-    if (isHovering) return // Don't auto-play when user is hovering
+    if (isHovering) return 
 
     const interval = setInterval(() => {
       if (currentIndex < images.length - 1) {

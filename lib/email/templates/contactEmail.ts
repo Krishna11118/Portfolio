@@ -1,4 +1,3 @@
-
 import { env } from "@/lib/env";
 
 export interface ContactEmailOptions {
@@ -14,9 +13,13 @@ export function getContactEmailOptions({ name, email, message }: ContactEmailOpt
         subject: `New Contact Form Submission from ${name}`,
         text: `Name: ${name}
 Email: ${email}
-Message: ${message}
-,        html: 
-
-<h2>New Contact Form Submission</h2> <p><strong>Name:</strong> ${name}</p> <p><strong>Email:</strong> ${email}</p> <p><strong>Message:</strong></p> <p>${message}</p> `,
+Message: ${message}`,
+        html: `
+<h2>New Contact Form Submission</h2>
+<p><strong>Name:</strong> ${name}</p>
+<p><strong>Email:</strong> ${email}</p>
+<p><strong>Message:</strong></p>
+<p>${message}</p>
+        `,
     };
 }
