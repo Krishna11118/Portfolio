@@ -1,58 +1,135 @@
-Portfolio Website
-This is a personal portfolio website built to showcase projects, skills, and contact information in a clean and responsive design.
-Table of Contents
+# Personal Portfolio Website (Next.js)
 
-Features
-Technologies Used
-Setup
-Usage
-Contributing
-License
+This is a **modern portfolio website** built with **Next.js**, **TailwindCSS**, and **Aceternity UI**, designed to showcase your projects, track visitor insights, and send automatic resume emails.
 
-Features
+---
 
-Responsive Design: Adapts seamlessly to desktops, tablets, and mobile devices.
-Project Showcase: Displays projects with descriptions and links to live demos or repositories.
-Contact Form: Allows visitors to send messages directly.
-Smooth Animations: Enhances user experience with subtle transitions and effects.
+## Tech Stack
 
-Technologies Used
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [TailwindCSS](https://tailwindcss.com/)
+- **UI Library**: [Aceternity UI](https://ui.aceternity.com/)
+- **Emailing**: [Nodemailer](https://nodemailer.com/)
+- **Geolocation**: [IP2Location API](https://www.ip2location.com/)
+- **Database**: [MongoDB Atlas](https://www.mongodb.com/)
+- **Deployment**: [Vercel](https://vercel.com/)
+- **Map**: World map from **Aceternity UI**
 
-HTML5: For semantic structure.
-CSS3: For styling and responsive layouts.
-JavaScript: For interactivity and dynamic content.
-Bootstrap: For responsive grid and components.
-jQuery: For simplified DOM manipulation and animations.
+---
 
-Setup
-To run this project locally, follow these steps:
+## Features
 
-Clone the repository:git clone https://github.com/Krishna11118/Portfolio.git
+- ✅ Built with **Next.js** and **TailwindCSS**
+- ✅ Sleek animated components via **Aceternity UI**
+- ✅ Dynamic Resume Download + Contact Form
+- ✅ **Visitor Analytics**:
+  - 🌍 World Map (via Aceternity UI)
+  - 👤 Show **Last Visitor City & Country** (IP2Location)
+  - 📊 Display **Total Visitors** (stored in MongoDB)
+- ✅ **Auto Resume Reply** via **Nodemailer**
+- ✅ Stores contact + visitor info in **MongoDB**
+- ✅ Fully Responsive & Mobile Friendly
+- ✅ SEO Optimized
+- ✅ Deployed on **Vercel**
 
+---
 
-Navigate to the project directory:cd Portfolio
+## ⚙️ Environment Variables
 
+Create a `.env.local` file in the root directory and add the following:
 
-Open the project:
-Open index.html in a web browser to view the website locally.
-Alternatively, use a local server like Live Server (VS Code extension) for a better development experience.
+```env
+NEXT_PUBLIC_IP2LOCATION_API_KEY=your_ip2location_api_key
 
+NEXT_PUBLIC_MONGODB_URI=your_mongodb_connection_string
+# For local MongoDB testing:
+# NEXT_PUBLIC_MONGODB_URI=mongodb://localhost:27017/testDB
 
+NEXT_PUBLIC_MONGODB_DB=your_mongodb_database_name
 
-Usage
+NEXT_PUBLIC_EMAIL_USER=your_email_address
+NEXT_PUBLIC_EMAIL_PASS=your_email_password_or_app_token
 
-Customize Content: Edit the HTML files to update personal information, project details, or contact info.
-Add Projects: Modify the projects section in index.html to include new projects with images, descriptions, and links.
-Deploy: Host the website on platforms like GitHub Pages, Netlify, or Vercel for public access.
+NEXT_PUBLIC_RESUME_LINK=your_resume_google_drive_or_hosted_link
 
-Contributing
-Contributions are welcome! To contribute:
+NEXT_PUBLIC_URL=http://localhost:3000
+# Or for production:
+# NEXT_PUBLIC_URL=https://your-live-site-url.com
+```
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes and commit (git commit -m "Add feature").
-Push to the branch (git push origin feature-branch).
-Open a pull request.
+> 🛑 **Note**: Never share or commit your real credentials publicly!
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/Krishna11118/Portfoliogit.git
+cd Portfoliogit
+
+# Install dependencies
+npm install
+# or
+npm install --legacy-peer-deps
+# or
+yarn install
+```
+
+---
+
+## 🚀 Run Locally
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+---
+
+## 📩 Auto-Resume via Nodemailer
+
+- Users who contact you get an **automated resume email**
+- Data is stored in **MongoDB**
+- SMTP credentials are securely managed using environment variables
+
+---
+
+## 🗺️ Visitor Tracking + Map
+
+- Uses **IP2Location API** to fetch visitor country & city
+- Tracks and stores all visits in **MongoDB**
+- Displays:
+  - ✅ Total Visits
+  - 🌍 Last Visitor’s City & Country
+  - 🗺️ Live map of visitors via **Aceternity UI**
+
+---
+
+## 🌍 Deployment (Vercel)
+
+1. Push your code to GitHub
+2. Go to [https://vercel.com](https://vercel.com)
+3. Import your repo and add the `.env.local` values to Vercel
+4. Deploy in 1 click!
+
+---
+
+## 🧑‍💻 Author
+
+**Krishna Sharma**  
+📫 [LinkedIn](https://linkedin.com/in/krishna11118)  
+📧 krishna11118@gmail.com  
+🌐 [Live Demo](https://krishna11118.vercel.app)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE)
+
+---
+
