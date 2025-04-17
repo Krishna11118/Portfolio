@@ -16,7 +16,10 @@ export async function POST(req: NextRequest) {
     const ip = forwarded ? forwarded.split(",")[0].trim() : "unknown";
 
     console.log("Visitor IP:", ip);
-
+    // Ignore localhost IPs
+    if (ip === "::1" || ip === "127.0.0.1") {
+      return NextResponse.json({ message: "Localhost IP - skipping DB save." }, { headers });
+    }
     // Get location data from ip2location.io
     const apiKey = env.NEXT_PUBLIC_IP2LOCATION_API_KEY;
     if (!apiKey) {
