@@ -48,7 +48,7 @@ export default function VisitorCount() {
       }, 1000);
 
       return () => clearTimeout(plusOneTimeout);
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timeoutPrevCount);
   }, [visitorCount, prevCount, springCount]);
@@ -78,7 +78,7 @@ export default function VisitorCount() {
             animate={{ opacity: 1, scale: 1.2, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: -10 }}
             transition={{ duration: 0.5, type: "spring", bounce: 0.4 }}
-            className="text-green-400 font-medium w-6 text-center"
+            className="text-green-700 font-medium w-6 text-center"
           >
             +1
           </motion.span>
@@ -87,7 +87,7 @@ export default function VisitorCount() {
             key="count"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
+            transition={{ duration: 0.1, ease: "easeOut" }}
             className="text-black-300 font-medium w-6 text-center"
           >
             <motion.span>{displayCount}</motion.span>

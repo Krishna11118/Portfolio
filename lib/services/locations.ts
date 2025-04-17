@@ -15,7 +15,7 @@ export async function getLocations(): Promise<
   }
 
   const data = await response.json();
-  console.log("Response from /api/locations:", data);
+  // console.log("Response from /api/locations:", data);
 
   if (
     !Array.isArray(data) ||

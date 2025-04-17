@@ -162,7 +162,7 @@ export default function WorldMap({
                 y={loc.labelY}
                 fill="white"
                 fontSize="10"
-                className="pointer-events-none select-none"
+                className="pointer-events-none text-[6px]  select-none"
               >
                 {loc.city}
               </text>
