@@ -93,8 +93,6 @@ cd Portfoliogit
 # Install dependencies
 npm install
 # or
-npm install --legacy-peer-deps
-# or
 yarn install
 ```
 
