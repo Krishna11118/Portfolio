@@ -18,15 +18,9 @@ export default async function WorldMapDemo() {
     const mockCities = [
       { latitude: 19.0760, longitude: 72.8777, city: "Mumbai" },
       { latitude: 12.9716, longitude: 77.5946, city: "Bangalore" },
-      // { latitude: 13.0827, longitude: 80.2707, city: "Chennai" },
       { latitude: 28.4595, longitude: 77.0266, city: "Gurugram" },
       { latitude: 22.5726, longitude: 88.3639, city: "Kolkata" },
       { latitude: 8.0844, longitude: 77.5495, city: "Kanyakumari" },
-      // { latitude: 17.3850, longitude: 78.4867, city: "Hyderabad" },
-      // { latitude: 23.0225, longitude: 72.5714, city: "Ahmedabad" },
-      // { latitude: 18.5204, longitude: 73.8567, city: "Pune" },
-      // { latitude: 26.9124, longitude: 75.7873, city: "Jaipur" },
-      // add us and uk cities
       { latitude: 40.7128, longitude: -74.0060, city: "New York" },
       { latitude: 34.0522, longitude: -118.2437, city: "Los Angeles" },
       { latitude: 51.5074, longitude: -0.1278, city: "London" },
