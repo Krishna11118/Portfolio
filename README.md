@@ -98,6 +98,16 @@ yarn install
 
 ---
 
+## Email Setup Instructions
+
+### If You Don’t Use 2-Step Verification
+Go to your [Google Account settings](https://myaccount.google.com/lesssecureapps).  
+Enable **"Allow less secure apps"**.
+
+### If You Use 2-Step Verification (Recommended for Security)
+Go to your [App Passwords settings](https://myaccount.google.com/apppasswords) in your Google Account.
+
+
 ## 🚀 Run Locally
 
 ```bash
