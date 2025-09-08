@@ -4,7 +4,7 @@ import "./globals.css"
 import Navbar from "@/components/navbar"
 import { ThemeProvider } from "@/components/theme-provider"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], display: 'swap' })
 
 export const metadata = {
   title: "Portfolio | Developer",
@@ -14,7 +14,6 @@ export const metadata = {
   },
 }
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -22,15 +21,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Preload critical API endpoints */}
+        <link rel="dns-prefetch" href="https://api.ip2location.io" />
+        <link rel="preconnect" href="https://api.ipify.org" />
+      </head>
       <body className={inter.className} >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Navbar />
-          <main > {children}</main>
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>
   )
 }
-
-
-import './globals.css'

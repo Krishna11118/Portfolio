@@ -4,10 +4,6 @@ import { connectToDatabase } from '@/lib/mongodb';
 import { applyCorsHeaders } from '@/utils/cors';
 
 export async function GET(req: NextRequest) {
-    const res = NextResponse.next(); // Create the NextResponse object
-
-    applyCorsHeaders(req, res); // Apply CORS headers
-
     try {
         // Connect to MongoDB
         const { db } = await connectToDatabase();
@@ -36,14 +32,24 @@ export async function GET(req: NextRequest) {
                     },
                 },
                 {
-                    $limit: 100, // Limit to 11 unique cities
+                    $limit: 100, // Limit to 100 unique cities
                 },
             ])
             .toArray();
 
-        return NextResponse.json(locations); // Send the JSON response
+        const response = NextResponse.json(locations);
+        
+        // Apply CORS headers
+        applyCorsHeaders(req, response);
+        
+        // Add caching headers
+        response.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=600');
+        
+        return response;
     } catch (error) {
         console.error("Error fetching locations:", error);
-        return NextResponse.json({ message: "Internal server error" }, { status: 500 });
+        const response = NextResponse.json({ message: "Internal server error" }, { status: 500 });
+        applyCorsHeaders(req, response);
+        return response;
     }
 }

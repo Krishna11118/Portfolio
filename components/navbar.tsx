@@ -32,6 +32,7 @@ export default function Navbar() {
     { name: "Technologies", href: "#technologies" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
+    { name: "Privacy", href: "/privacy" },
   ]
 
   const menuVars = {

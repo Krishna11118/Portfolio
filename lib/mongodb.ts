@@ -24,20 +24,27 @@ export async function connectToDatabase() {
     return { client: cachedClient, db: cachedDb }
   }
 
-  // Set the connection options
+  // Set the connection options with optimizations
   const opts = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    maxPoolSize: 10, // Maintain up to 10 socket connections
+    serverSelectionTimeoutMS: 5000, // Keep trying to send operations for 5 seconds
+    socketTimeoutMS: 45000, // Close connections after 45 seconds of inactivity
+    family: 4, // Use IPv4, skip trying IPv6
   }
 
-  // Connect to cluster
-  const client = new MongoClient(NEXT_PUBLIC_MONGODB_URI!)
-  await client.connect()
-  const db = client.db(NEXT_PUBLIC_MONGODB_DB)
+  try {
+    // Connect to cluster
+    const client = new MongoClient(NEXT_PUBLIC_MONGODB_URI!, opts)
+    await client.connect()
+    const db = client.db(NEXT_PUBLIC_MONGODB_DB)
 
-  // Set cache
-  cachedClient = client
-  cachedDb = db
+    // Set cache
+    cachedClient = client
+    cachedDb = db
 
-  return { client, db }
+    return { client, db }
+  } catch (error) {
+    console.error("MongoDB connection error:", error)
+    throw error
+  }
 }
